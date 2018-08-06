@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>subpage</title>
+	        <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
+	<style>
+		*{padding:0;margin:0;}
+        ul,li{list-style:none}
+        a{text-decoration:none;}
+        a:link,a:visited{color:black;}
+		body{font-family:'Modern Antiqua', cursive;
+		min-width:760px;}
+
+		#main_header{
+			background:url(../image/flower.jpg);
+			height:60px;line-height:60px;
+			border-bottom:1px solid lightgray;
+			padding-left:10px;
+			color:white;}
+
+		#main_gnb{
+			border-bottom:1px solid lightgray;
+			background: navy;}	
+		#main_gnb:after{
+            content:"";display:block;clear:both;}
+
+		#main_gnb>ul.left{float:left;}
+		#main_gnb>ul.left:after{content:"";display:block;clear:both;}
+		#main_gnb>ul.left>li{float:left;}
+
+		#main_gnb>ul.right{float:right;}
+		#main_gnb>ul.right:after{content:"";display:block;clear:both;}
+		#main_gnb>ul.right>li{float:left;}
+
+		#main_gnb a{display:block;
+			padding:10px 20px;color:gray;font-weight:bold;}
+		#main_gnb a:hover{background:tomato;color:white;font-weight:bold;}		
+		
+
+
+		#wrap{background: lightpink;overflow:hidden;
+			border-bottom: 1px solid lightgray;}
+
+		#wrap>#content_wrap{float:left;
+			width:74%;background:white;
+			padding:3%;box-sizing:border-box;
+			border-left:1px solid black;}
+
+		#content_wrap>#content{padding-right:200px;}
+
+		#wrap>#main_lnb{float:left;width:150px;}
+		#wrap>#main_lnb>ul>li>a{
+			display:block;
+			height:40px;
+			line-height: 40px;
+			padding-left:15px;
+			border-top:1px solid ivory;
+			border-bottom: 1px solid tomato;
+			font-weight: bold;}
+		
+		#wrap>#main_lnb>ul>li>a:hover{}
+
+		#main_footer{padding:10px;
+			text-align: center;
+			border-top: 10px;}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="main_header">
+		<h1>COMPANY</h1>
+	</div>
+<!-- 		nav#main_gnb>ul.left>li*6>a[href="#"]>{Button}^^^ul>li*2>a[href=#]>{Button} -->
+	<nav id="main_gnb">
+		<ul class="left">
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="#">Button</a></li>
+			<li><a href="#">Button</a></li>
+		</ul>
+	</nav>
+	<div id="wrap">
+		<nav id="main_lnb">
+			<ul>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+			</ul>
+		</nav>
+		<div id="content_wrap">
+			<div id="content">
+				<article>
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit magnam eveniet deserunt perspiciatis placeat error impedit vero tempore sed veritatis. Alias, delectus in? Quisquam ipsa itaque natus unde quibusdam placeat magnam laborum, nostrum eveniet labore expedita dolore quo hic reprehenderit minima maiores saepe praesentium accusantium ipsum obcaecati culpa architecto pariatur sunt qui debitis. Et sunt, incidunt pariatur mollitia laborum voluptatum praesentium odit nemo vero maxime rem quis repellendus asperiores labore non ipsum eos minima dolor corrupti sint voluptatibus facere doloremque itaque ut! In officia, voluptatem natus esse. Fugit quod, eum. Ipsa repellat dolorem suscipit ea, autem explicabo. Nesciunt, nostrum maiores!</p>
+				</article>
+				<article>
+					<h1>Sunt animi optio, iste fugiat.</h1>
+					<p>Iure velit aut sit voluptate excepturi est voluptas, amet magnam doloremque harum, similique rem laudantium suscipit aspernatur nostrum ad aliquid vitae doloribus dolor hic ea ipsum et. Iure corporis voluptatum ea magnam voluptate odio quidem. Repudiandae odio dolores id magni quaerat ipsum, quae, culpa mollitia maxime magnam at cupiditate, maiores sapiente reprehenderit quisquam eos autem, accusantium adipisci eius deleniti. Cum iure a corrupti dolore ex et dignissimos, fugiat veniam illum temporibus omnis, id expedita enim voluptas illo rem, voluptate hic. Soluta nostrum dicta odit fugiat sint, maiores neque adipisci vitae vel corrupti commodi nihil, velit nam repudiandae? Quam ipsam, veritatis.</p>
+				</article>
+				<article>
+					<h1>Voluptatibus enim voluptate sint expedita.</h1>
+					<p>Cumque excepturi quo distinctio error! Atque, vero, iusto? Aspernatur facere totam recusandae, tenetur in, accusamus laborum. Eum commodi explicabo nesciunt quam dolores id, nemo provident voluptatem modi maiores, officia, earum ratione corrupti alias ipsam ea fugiat optio. At eum voluptatem, commodi optio molestiae dolore cum omnis nostrum magnam velit accusamus possimus pariatur earum blanditiis. Quo explicabo facilis libero consectetur, reprehenderit cumque ipsum deleniti sequi tempore possimus nihil dolor, laudantium doloremque repellendus commodi temporibus nobis dignissimos repellat dolorem. Error corporis pariatur, facilis nostrum, officiis nisi. Aliquam itaque dolorum aperiam consequuntur laboriosam, vel obcaecati minima reprehenderit eius. Expedita alias dicta tenetur, repellat.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+	<footer id="main_footer"></footer>
+</body>
+</html>>ibero consectetur, reprehenderit cumque ipsum deleniti sequi tempore possimus nihil dolor, laudantium doloremque repellendus commodi temporibus nobis dignissimos repellat dolorem. Error corporis pariatur, facilis nostrum, officiis nisi. Aliquam itaque dolorum aperiam consequuntur laboriosam, vel obcaecati minima reprehenderit eius. Expedita alias dicta tenetur, repellat.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+	<footer id="main_footer"></footer>
+</body>
+</html>
