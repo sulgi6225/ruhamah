@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>	Topmenu </title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="topnav">
+		<a href="#"class="active"><i class="fas fa-home"></i> HOME</a>
+		<a href="#"><i class="far fa-newspaper"></i> NEWS</a>
+		<a href="#"><i class="fas fa-user-friends"></i> CONTECT</a>
+		<a href="#"><i class="fas fa-address-book"></i> ABOUT</a>
+		<a href="javascript:void(0)" class="icon1" onclick="menuopen()">
+			<i class="fas fa-bars"></i>
+		</a>
+		<a href="javascript:void(0)" class="icon2" onclick="menuclose()">
+			<i class="fas fa-times"></i>
+		</a>
+	</div>
+	<div class="content">
+		<h2>Lorem ipsum dolor.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sunt.</p>
+	</div>
+
+	<script>
+//	function menuopen(){
+//		var x = document.getElementByID('mytopmenu')
+//		if(x.className == "topnav"){
+//			x.className += " responsive";
+//		}else{
+//			x.className = "topnav"
+//		}
+//	}
+
+
+		var w;
+		window.onresize = function(){
+			w = document.body.clientWidth;
+			var x = document.getElementsByTagName('a');
+			if(w > 600){
+
+				x.item(0).style.display = "block";
+				x.item(1).style.display = "block";
+				x.item(2).style.display = "block";
+				x.item(3).style.display = "block";
+				x.item(4).style.display = "none";
+				x.item(5).style.display = "none";
+			}else{
+				x.item(0).style.display = "block";
+				x.item(1).style.display = "none";
+				x.item(2).style.display = "none";
+				x.item(3).style.display = "none";
+				x.item(4).style.display = "block";
+				x.item(5).style.display = "none";
+
+			}
+		}
+
+
+		function menuopen(){
+			 var x = document.getElementsByTagName('a');
+			// x.item(1).style.display = "block" ;
+			// x.item(2).style.display = "block" ;
+			// x.item(3).style.display = "block" ;
+
+			for(var i=1; i<4; i++){
+				x.item(i).style.display = "block";
+				x.item(4).style.display = "none";
+				x.item(5).style.display = "block";
+			}
+		}
+
+		function menuclose(){
+			 var y = document.getElementsByTagName('a');
+
+			for(var i=1; i<4; i++){
+				y.item(i).style.display = "none";
+				y.item(4).style.display = "block";
+				y.item(5).style.display = "none";
+			}
+		}
+
+	</script>
+</body>
+</html>
